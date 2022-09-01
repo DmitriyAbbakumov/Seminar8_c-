@@ -39,9 +39,9 @@ int[,] matrixMult(int[,] matr1, int[,] matr2)        //умноженние ма
         for (int j = 0; j < matrMult.GetLength(1); j++)
         {
             int P = 0;
-            for (int k = 0; k < matr1.GetLength(1); k++)
+            for (int j1 = 0; j1 < matr1.GetLength(1); j1++)
             {
-                P = P + matr1[i, k] * matr2[k, j];
+                P = P + matr1[i, j1] * matr2[j1, j];
 
             }
             matrMult[i, j] = P;
