@@ -8,7 +8,6 @@
 // 9 5 3 2
 // 8 4 4 2
 
-//int[,] arr = new int[3, 5];
 int[,] FillArray(int m, int n)  //Заполняет массив
 {
     int[,] arr = new int[m, n];
@@ -54,7 +53,10 @@ void PrintArray(int[,] arr)         //Печать массива
     }
 }
 
-int[,] array = FillArray(3, 5);
+Console.WriteLine("Введите строи и сторбцы через Enter");
+int n = Convert.ToInt32(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
+int[,] array = FillArray(n, m);
 PrintArray(array);
 Console.WriteLine();
 SortArray(array);
